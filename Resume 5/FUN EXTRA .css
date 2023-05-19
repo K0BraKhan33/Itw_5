@@ -1,4 +1,5 @@
 body {
+    margin-left: 10%;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
     color: #000000;
@@ -20,10 +21,45 @@ body {
     color: rgb(0, 29, 109)
 }
 
+.spaceing{
+    padding-top:150px ;
+    padding-bottom: 100px;
+}
+
+.scroll{
+    padding: 1rem;
+    background: white;
+    box-shadow: black;
+    border-radius: 8px;
+    max-width:900px;
+    width: 100%;
+    margin: auto;
+    
+
+
+}
+.mainscroll{
+
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-snap-type:x mandatory ;
+    scroll-padding-left: 90px;
+    
+   
+}
+.mainscroll img{
+    scroll-snap-align: center;
+    scroll-behavior:smooth;
+}
+
 .blocks_about {
-    padding-top: 75px;
+
+
+    padding-top: 100px;
     min-width: 600px;
     margin-bottom: 100px;
+
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14;
@@ -36,26 +72,29 @@ body {
     min-width: 600px;
 
     margin-left: 000px;
-    margin-top: 500px;
+    margin-top: 20%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14;
     
-    background: #a4946159;
-    color: rgb(0, 0, 0)
+    background: #1f1f1f59;
+    color: rgb(255, 255, 255)
 }
 .blocks_EXP {
+    
+
 
     min-width: 600px;
     margin-left: 000px;
-    margin-top: 200px;
+    margin-top: 10%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14;
-    background: #a4946159;
-    color: rgb(0, 0, 0)
+    background: #30303059;
+    color: rgb(255, 255, 255)
 }
 
 .asides {
 
+    padding-right: 50px;
  padding-top: 30px;
  margin-top: 50px;
     float: left;
@@ -242,8 +281,14 @@ header{
 }
 
 footer {
-    position: relative;
+    display: block;
+    margin-left: 1%;
     top:50%;
-    left:40%+10px;
     right:auto;
+    text-align: center;
+    font-size: 25px;
+}
+footer img{
+    width: 10%;
+    height: 10%;
 }
